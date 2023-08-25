@@ -31,7 +31,8 @@ a:focus {
 }
 /* layout  */
 .wrapper {
-  width: 620px;
+  width: 90%;
+  max-width: 620px;
   margin: 0 auto;
 }
 section {
@@ -76,4 +77,8 @@ img {
 .btn-white:hover {
   background: #2e354f;
   color: #fff;
+}
+
+img {
+  width: 100%;
 }
