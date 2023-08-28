@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com/css2?family=Lora&family=Ubuntu:wght@700&display=swap");
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: "Ubuntu", sans-serif;
+}
+.container {
+  width: 90%;
+  /* max-width: 900px; */
+  /* border: 1px solid magenta; */
+  margin: 0 auto;
+}
+.container-nav {
+  display: flex;
+  justify-content: space-between;
+}
+header {
+  background-color: #f8f8f8;
+  /* text-align: center; */
+  padding: 2em 0;
+}
+
+h1 {
+  font-family: "Lora", sans-serif;
+  font-weight: 400;
+  color: #143774;
+  font-size: 3.375rem;
+  margin: 0;
+}
+
+.subtitle {
+  margin: 0;
+  font-weight: 800;
+  color: #1792d2;
+  font-size: 0.75rem;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  /* margin */
+  padding: 0;
+}
+nav a {
+  font-weight: 700;
+  /* font-size: 1rem; */
+  color: #707070;
+  text-decoration: none;
+  padding: 0.25em 0;
+}
+nav li {
+  margin-left: 2em;
+}
+
+nav a:focus,
+nav a:hover {
+  color: #1792d2;
+  /* wrong! underline happen when u click on link */
+  /* text-decoration: underline;
+  text-underline-offset: 0.25em; */
+}
+
+.current-page {
+  border-bottom: 1px solid #707070;
+}
+
+.current-page:hover,
+.current-page:focus {
+  color: #707070;
+}
