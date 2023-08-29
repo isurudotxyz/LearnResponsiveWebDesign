@@ -70,19 +70,38 @@ strong {
   padding: 2em 1em;
 }
 /* 1 method to deal with big screen */
-/* .intro > *,
+.intro > *,
 .main-content * {
   max-width: 400px;
   margin-left: auto;
   margin-right: auto;
-} */
+}
 
 /* 2 method */
-.container {
+/* .container {
   max-width: 400px;
   margin: 0 auto;
-  /* border: 3px solid red; */
+  border: 3px solid red; 
+} */
+/* form */
+.email-collector {
+  border: 3px #f18119 solid;
+  width: 250px;
+  max-width: 300px;
 }
+input,
+.btn {
+  width: 100%;
+  border-radius: 5px;
+}
+input {
+  margin-bottom: 0.75em;
+  font-family: inherit;
+  text-align: inherit;
+  padding: 0.25em;
+  border: 1px solid #404040;
+}
+/* media queries */
 @media (min-width: 500px) {
   body {
     display: flex;
@@ -107,8 +126,8 @@ strong {
   }
   /* 2 method */
 
-  .container-intro {
+  /* .container-intro {
     height: 100vh;
-    /* background: pink; */
-  }
+    background: pink; 
+  } */
 }
