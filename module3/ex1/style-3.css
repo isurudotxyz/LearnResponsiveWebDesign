@@ -41,10 +41,14 @@ strong {
 }
 .top-text {
   font-size: 0.625rem;
+  margin: 0;
+  padding-top: 2px;
   text-transform: uppercase;
   font-weight: 900;
   color: #f18119;
   order: -1;
+  border-top: 5px solid #f18119;
+  border-image: linear-gradient(to left, #ff713b, #ffa51d) 1;
 }
 .fine-print {
   font-size: 0.625rem;
@@ -55,6 +59,7 @@ strong {
 
 .intro {
   background-color: #404040;
+  background-blend-mode: multiply;
   background-size: cover;
   background-position: center;
   background-image: url(images/dark-ribs.jpg);
@@ -100,6 +105,34 @@ input {
   text-align: inherit;
   padding: 0.25em;
   border: 1px solid #404040;
+  transform: scale(1);
+  transition: transform 250ms;
+}
+input:focus {
+  transform: scale(1.1);
+}
+.btn {
+  display: inline-block;
+  padding: 1em 1.5em;
+  font-size: 0.625rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 900;
+  border: 0;
+  cursor: pointer;
+}
+
+.btn-primary {
+  background: linear-gradient(to left, #ff713b, #ffa51d);
+  /* transition: color 500ms; */
+  transform: scale(1);
+  transition: transform 250ms;
+}
+.btn-primary:hover,
+.btn-primary:focus {
+  transition: scale(1.2);
+  color: black;
+  background-position: ;
 }
 /* media queries */
 @media (min-width: 500px) {
